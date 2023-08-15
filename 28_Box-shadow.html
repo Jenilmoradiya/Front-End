@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+<style>
+.container{
+    display: flex;
+}
+.box{
+    border: 2px solid purple;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+/*Box shadow properties gives shadow on backside of background color*/
+    #box1{
+        box-shadow: 10px 10px blueviolet;
+    }
+    /*here we have used third pixel which is used to blur the color*/
+    #box2{
+        box-shadow: 10px 10px 12px blueviolet;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box1">
+        <h1>box 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime itaque minima delectus cumque! Magnam quaerat architecto rem libero culpa adipisci ab vero consectetur.</p>
+    </div>
+    <div class="box" id="box2">
+        <h1>box 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae excepturi delectus dolore atque, saepe esse facere dolores. Fuga debitis libero explicabo adipisci nulla.</p>
+    </div>
+    <div class="box" id="box3">
+        <h1>box 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati quasi quas magnam architecto eius corrupti perferendis atque ducimus, tenetur provident, nemo nulla expedita dignissimos et doloribus saepe! Aspernatur, iure!</p>
+    </div>
+    </div>
+</body>
+</html>
