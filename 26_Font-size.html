@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em and rem</title>
+
+    <style>
+     html{
+        font-size: 10px;
+     }
+     .container{
+        font-size: 5px;
+        text-align: center;
+        border: 4px solid black;
+        height: 50vh;
+        width: 100vw;
+        /*vh refers to the size of the height. It will take 50% of height of total page size.
+        vw refers to the size of the width. It will. take 100% of weidht of total page size */
+     }
+ 
+     #first{
+        font-size: 10em;
+        /*Here em refers to font size 10em *font size of container.The font size will be multiplied by the base class*/
+     }
+     #second{
+        /*Here rem refers to font size 10rem multiplied to htm font-size.the font size will be multipiled by th html*/
+        font-size: 10rem;
+     }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+      <h1 id="first"> I am first</h1>
+      <h1 id="second">I am second</h1>
+      <h1 id="third">I am third</h1>
+
+    </div>
+    
+</body>
+</html>
