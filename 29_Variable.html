@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        
+        /*The variable written inside root is used in whole css. Any name can be given to variable7*/
+        :root{
+            --first:blue;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background-color: blueviolet;
+            border: 4px solid brown;
+        }
+        #box1{
+            background-color: aqua;
+        }
+
+        #box2{
+            background-color: var(--first);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    
+</body>
+</html>
