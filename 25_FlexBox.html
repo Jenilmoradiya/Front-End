@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+<style>
+.container{
+  height: 500px;
+  width: 100%;
+  border: 4px solid blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Justify-content-it will display the boxes in center.
+
+  justify-content: center;
+  justify-content: end;
+  justify-content: left;
+  */
+
+/*
+align item-Along with justify content it will help to display content in the center of page
+align-item:center;
+align-item:left:
+*/  
+
+  /*Flexbox properties-These property is used to arrange boxes in particular form.
+
+flex-direction:row
+flex-direction:column
+flex-direction:reverse column
+
+flex-wrap:no wrap;
+these property will make responsiveness into your website
+*/
+.box{
+    border: 2px solid black;
+    width: 180px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    color: blueviolet;
+
+/*Flex self properties
+
+flex-grow:3;                                      It will grow raplidy when we consider responsiveness as we move from mobile to pc
+flex-shrink:3;                                   Opposite of flex-shrink
+
+
+align-self:start;                                It will place the box to the starting of div container
+align-self:end;                                  It will place the box to the end of div container
+align-self:center;                               It will place the box to the center of div container
+*/
+    
+}
+
+</style>
+
+</head>
+<body>
+  
+    <h1>Example and properties of FlexBox</h1>
+    <div class="container">
+   <div class="box" id="item1">This is box 1</div>
+   <div class="box" id="item2">This is box 2</div>
+   <div class="box" id="item3">This is box 3</div>
+   <div class="box" id="item4">This is box 4</div>
+   <div class="box" id="item5">This is box 5</div>
+   <div class="box" id="item6">This is box 6</div>
+</div>
+</body>
+</html>
