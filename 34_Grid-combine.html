@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+<style>
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);/*It is used make rows in repeat manner means it will create 3 rows*/
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 5px;
+}
+.box{
+    border: 2px solid blueviolet;
+    background-color: aquamarine;
+}
+
+.box:first-child{
+    grid-column-start: 1;/*It will combine the column*/
+    grid-column-end: 3;
+    
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Grid's Example 1</div>
+    <div class="box">Grid's Example 2</div>
+    <div class="box">Grid's Example 3</div>
+    <div class="box">Grid's Example 4</div>
+    <div class="box">Grid's Example 5</div>
+    <div class="box">Grid's Example 6</div>
+    <div class="box">Grid's Example 7</div>
+    <div class="box">Grid's Example 8</div>
+</div>
+</body>
+</html>
