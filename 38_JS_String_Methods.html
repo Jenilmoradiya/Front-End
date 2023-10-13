@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script>
+        var str="Hi i am goind to be a bad boy"
+
+        //It will show the strind prsent at that index 
+        var a=str.charAt(5);
+        console.log(a);
+       
+        //It will give the number from index 1 to 7 index 8 will not be counted
+        var b=str.slice(1,8);
+        console.log(b);
+       
+        //Slice and these is same only differnece is that slice can take negative number while substring cant
+        var c=str.substring(1,8);
+        console.log(c);
+       
+        //Substr refers that first index will show from where the count will start while the second index will tell how many numbers
+        var d=str.substr(1,4);
+        console.log(d);
+       
+        //Will add the string with the current one
+        var e=str.concat("bye");
+        console.log(e);
+       
+        //Will give you the index of that value
+        var f=str.indexOf('i'); 
+        console.log(f);
+       
+        var g=str.toLowerCase()
+        console.log(g)
+    </script>
+    
+</body>
+</html>
